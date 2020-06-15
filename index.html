@@ -1,53 +1,100 @@
-<style type="text/css">
- body {
-  font-family: 'FFBauWeb';
- }
- 
- p, ul {
-  font-size: 15px;
- }
- 
- .leftside, .rightside {
-   height: 100vh;
-   width: 100%
- }
- 
- .leftside {
-   background:black;
- }
- 
- .rightside {
-   background:white;
- }
-  
-</style>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Escapism 2.0</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
+    <style media="screen">
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
 
-<h1>D7H.</h1>
-<head>
- </head>
- 
- <body>
-  
-  <div class="row">
-   <div class="col">
-    <div class="leftside"></div>
-    
-   </div>
-  
-   <div class="row">
-    <div class="col">
-     <div class="rightside"></div>
-    
-   </div>
- <p>
-   <h3> Escapism 2.0</h3>
-  <br />
- A report on consumer trends, cultural behaviours and predctions based on observations between March and June of 2020.
- <br />
-</p>
+      body {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
 
-<p>Get in touch: <a href="mailto:contact@d7h.co">contact@d7h.co</a></p>
-   
- </body>
+      body {
+        display: flex;
+        flex-direction: row;
+
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .lhc {
+        background: #000;
+        width: 50%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        color: #FFF;
+      }
+
+      .rhc {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 100px;
+
+        position: relative;
+      }
+
+      .rhc footer {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+      }
+
+      h2 {
+        font-size: 50px;
+        font-family: 'EB Garamond', serif;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lhc">
+      <h2>D7H</h2>
+    </div>
+
+    <div class="rhc">
+      <h3>Escapism 2.0</h3>
+
+      <p>A report on consumer trends, cultural behaviours and predictions based on observations between March and June of 2020.</p>
+
+      <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vQf_udG5Ds8nq8TsnTPbO0gQLds5y-jON8OW_9UoK0s5bTnTrL8JsYg0wBGn5rpJvEcNBnvCR82pGfz/pub?start=false&loop=false&delayms=3000">
+      See report
+      </a></p>
+
+      <footer>
+        <a href="mailto:contact@d7h.co">contact@d7h.co</a>
+      </footer>
+    </div>
+  </body>
+</html>
